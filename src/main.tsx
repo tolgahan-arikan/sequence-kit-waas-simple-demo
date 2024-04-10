@@ -25,6 +25,7 @@ const chains: readonly [Chain, ...Chain[]] = [
   polygon as Chain,
 ];
 
+// replace with your keys, and better to use env vars
 const projectAccessKey = "EeP6AmufRFfigcWaNverI6CAAAAAAAAAA";
 const waasConfigKey =
   "eyJwcm9qZWN0SWQiOjIsImVtYWlsUmVnaW9uIjoidXMtZWFzdC0yIiwiZW1haWxDbGllbnRJZCI6IjVncDltaDJmYnFiajhsNnByamdvNzVwMGY2IiwicnBjU2VydmVyIjoiaHR0cHM6Ly9uZXh0LXdhYXMuc2VxdWVuY2UuYXBwIn0=";
@@ -43,8 +44,7 @@ const connectors = [
     appleRedirectURI,
     appName: "Kit Demo",
     projectAccessKey,
-    enableConfirmationModal:
-      localStorage.getItem("confirmationEnabled") === "true",
+    enableConfirmationModal: false,
   }),
 ];
 
